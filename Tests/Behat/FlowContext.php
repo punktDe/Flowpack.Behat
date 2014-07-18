@@ -15,8 +15,9 @@ use Behat\Behat\Context\BehatContext;
 use TYPO3\Flow\Core\Booting\Scripts;
 use TYPO3\Flow\Core\Bootstrap;
 use TYPO3\Flow\Configuration\ConfigurationManager;
+use \Behat\Behat\Context\SnippetAcceptingContext;
 
-class FlowContext extends BehatContext {
+class FlowContext implements SnippetAcceptingContext {
 
 	/**
 	 * @var Bootstrap
